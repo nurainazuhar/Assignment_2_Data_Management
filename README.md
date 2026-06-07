@@ -8,7 +8,7 @@ This project was developed for **STQD6324 Data Management Assignment 2**. The ob
 
 ## 🛠️ Software Environment
 
-| Component          | Purpose                      |
+| Component          | Purpose                      | 
 | ------------------ | ---------------------------- |
 | Apache Hadoop HDFS | Distributed storage          |
 | Apache Spark       | Distributed data processing  |
@@ -83,8 +83,10 @@ Calculate the average rating received by every movie in the dataset.
   * Average rating
   * Number of ratings
 
-### Top Results
-
+### Results
+<p align="center">
+  <img src="screenshots/task1_avg_ratings.png" width="900">
+</p>
 
 
 ### Interpretation
