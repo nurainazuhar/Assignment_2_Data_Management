@@ -102,23 +102,13 @@ Several movies achieved a perfect average rating of 5.0. However, these movies r
 Identify the highest-rated movies based on average ratings.
 
 ### Top 10 Movies
-
-| Rank | Movie                                                  | Average Rating |
-| ---- | ------------------------------------------------------ | -------------- |
-| 1    | Close Shave, A (1995)                                  | 4.49           |
-| 2    | Schindler's List (1993)                                | 4.47           |
-| 3    | Wrong Trousers, The (1993)                             | 4.47           |
-| 4    | Casablanca (1942)                                      | 4.46           |
-| 5    | Wallace & Gromit: The Best of Aardman Animation (1996) | 4.45           |
-| 6    | The Shawshank Redemption (1994)                        | 4.45           |
-| 7    | Rear Window (1954)                                     | 4.39           |
-| 8    | The Usual Suspects (1995)                              | 4.39           |
-| 9    | Star Wars (1977)                                       | 4.36           |
-| 10   | 12 Angry Men (1957)                                    | 4.34           |
+<p align="center">
+  <img src="screenshots/task_ii_output.png" width="900">
+</p>
 
 ### Interpretation
 
-The results reveal that several critically acclaimed films dominate the highest-rated list. Classic movies such as *Casablanca*, *12 Angry Men*, and *Rear Window* remain highly appreciated by users despite their age, indicating enduring audience appeal.
+The results reveal that several critically acclaimed films dominate the highest-rated list. Classic movies such as *Casablanca*, *12 Angry Men*, and *Rear Window* remain highly appreciated by users despite their age, which indicates enduring audience appeal.
 
 ---
 
@@ -137,19 +127,13 @@ Identify users who rated at least 50 movies and determine their favourite genre.
   * Comedy
   * Horror
 
-### Sample Results
-
-| User ID | Favourite Genre | Ratings |
-| ------- | --------------- | ------- |
-| 26      | Drama           | 41      |
-| 474     | Drama           | 166     |
-| 541     | Comedy          | 52      |
-| 222     | Comedy          | 131     |
-| 367     | Horror          | 31      |
+<p align="center">
+  <img src="screenshots/task_iii_output.png" width="900">
+</p>
 
 ### Interpretation
 
-Drama emerged as the most common favourite genre among active users. This suggests that users who engage heavily with the platform tend to consume a wide variety of dramatic content. Comedy also appeared frequently, indicating broad audience preference.
+**Drama** emerged as the most common favourite genre among active users. This suggests that users who engage heavily with the platform tend to consume a wide variety of dramatic content. **Comedy** also appeared frequently, indicating broad audience preference.
 
 ---
 
@@ -162,6 +146,9 @@ Identify all users younger than 20 years old.
 ### Results
 
 * Total Users Below 20: **77 users**
+<p align="center">
+  <img src="screenshots/task_iv_output.png" width="900">
+</p>
 
 ### Observation
 
@@ -183,15 +170,9 @@ Identify users whose occupation is scientist and whose age falls between 30 and 
 
 * Total Scientists Aged 30–40: **16 users**
 
-### Sample Results
-
-| User ID | Age | Gender |
-| ------- | --- | ------ |
-| 40      | 38  | Male   |
-| 71      | 39  | Male   |
-| 183     | 33  | Male   |
-| 730     | 31  | Female |
-| 918     | 40  | Male   |
+<p align="center">
+  <img src="screenshots/task_v_output.png" width="900">
+</p>
 
 ### Interpretation
 
