@@ -85,7 +85,7 @@ Calculate the average rating received by every movie in the dataset.
 
 ### Results
 <p align="center">
-  <img src="screenshots/task_i_output.png" width="900">
+  <img src="screenshots/task_i_output.png" width="700">
 </p>
 
 
@@ -103,7 +103,7 @@ Identify the highest-rated movies based on average ratings.
 
 ### Top 10 Movies
 <p align="center">
-  <img src="screenshots/task_ii_output.png" width="900">
+  <img src="screenshots/task_ii_output.png" width="700">
 </p>
 
 ### Interpretation
@@ -128,7 +128,7 @@ Identify users who rated at least 50 movies and determine their favourite genre.
   * Horror
 
 <p align="center">
-  <img src="screenshots/task_iii_output.png" width="900">
+  <img src="screenshots/task_iii_output.png" width="700">
 </p>
 
 ### Interpretation
@@ -147,7 +147,7 @@ Identify all users younger than 20 years old.
 
 * Total Users Below 20: **77 users**
 <p align="center">
-  <img src="screenshots/task_iv_output.png" width="900">
+  <img src="screenshots/task_iv_output.png" width="700">
 </p>
 
 ### Observation
@@ -171,7 +171,7 @@ Identify users whose occupation is scientist and whose age falls between 30 and 
 * Total Scientists Aged 30–40: **16 users**
 
 <p align="center">
-  <img src="screenshots/task_v_output.png" width="900">
+  <img src="screenshots/task_v_output.png" width="700">
 </p>
 
 ### Interpretation
