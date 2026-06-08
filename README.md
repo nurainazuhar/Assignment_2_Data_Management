@@ -63,14 +63,34 @@ Write Results to Cassandra
        ▼
 Read Back for Validation
 ```
-
+---
+📁 Repository Structure
+STQD6324-Assignment2/
+│
+├── README.md
+├── P161828_Assignment2_MovieLens_Analysis.json
+│
+├── screenshots/
+│   ├── task_i_output.png
+│   ├── task_ii_output.png
+│   ├── task_iii_output.png
+│   ├── task_iv_output.png
+│   ├── task_v_output.png
+│   ├── task_i_visual.png
+│   ├── task_ii_visual.png
+│   ├── task_iii_visual.png
+|   ├── task_iv_visual.png
+│   └── task_v_visual.png
+│
+└── setup.cql
+    
 ---
 
 # 📊 Analytical Tasks
 
 ---
 
-## Task (i): Average Rating for Each Movie
+## 🎬 Task (i): Average Rating for Each Movie
 
 ### Objective
 
@@ -105,12 +125,17 @@ Several movies achieved a perfect average rating of 5.0. However, these movies r
 
 ---
 
-## Task (ii): Top 10 Highest Rated Movies
+## ⭐ Task (ii): Top 10 Highest Rated Movies
 
 ### Objective
 
 Identify the highest-rated movies based on average ratings.
 
+### Method
+- Calculated average ratings for all movies.
+- Filtered movies with sufficient rating counts (>10).
+- Ranked movies by average rating in descending order.
+  
 ### Top 10 Movies
 <p align="center">
   <a href="screenshots/task_ii_output.png">
@@ -131,12 +156,18 @@ The results reveal that several critically acclaimed films dominate the highest-
 
 ---
 
-## Task (iii): Favourite Genre of Active Users
+## 🎭 Task (iii): Favourite Genre of Active Users
 
 ### Objective
 
 Identify users who rated at least 50 movies and determine their favourite genre.
 
+### Method
+- Selected users with at least 50 movie ratings.
+- Joined rating information with movie genre information.
+- Counted genre occurrences for each user.
+- Selected the most frequently rated genre as the user's favourite genre.
+  
 ### Results Summary
 
 * Active Users Identified: **568 users**
@@ -165,12 +196,16 @@ Identify users who rated at least 50 movies and determine their favourite genre.
 
 ---
 
-## Task (iv): Users Below 20 Years Old
+## 👦 Task (iv): Users Below 20 Years Old
 
 ### Objective
 
 Identify all users younger than 20 years old.
 
+### Method
+- Filtered the user dataset based on age.
+- Selected records where age < 20.
+  
 ### Results
 
 * Total Users Below 20: **77 users**
@@ -197,12 +232,17 @@ The prevalence of students among younger users is expected due to their higher e
 
 ---
 
-## Task (v): Scientists Aged Between 30 and 40
+## 🔬 Task (v): Scientists Aged Between 30 and 40
 
 ### Objective
 
 Identify users whose occupation is scientist and whose age falls between 30 and 40 years.
 
+### Method
+- Filtered users based on occupation.
+- Selected only users with occupation = scientist.
+- Applied an age filter between 30 and 40 years old.
+- 
 ### Results
 
 * Total Scientists Aged 30–40: **16 users**
@@ -241,6 +281,80 @@ The analytical outputs were stored in Cassandra for persistence and validation.
 After insertion, all Cassandra tables were read back into Spark DataFrames to verify successful storage.
 
 ---
+
+# ▶️ Reproducibility
+
+### 1. Upload Dataset to HDFS
+
+Upload the following MovieLens files into HDFS:
+
+* `u.data`
+* `u.user`
+* `u.item`
+
+---
+
+### 2. Start Cassandra
+
+Open PuTTY and run:
+
+```bash
+su root
+service cassandra start
+cqlsh
+```
+
+Execute the commands in `setup.cql` to create:
+
+* Keyspace: `movielens`
+* Tables:
+
+  * `avg_ratings`
+  * `top_movies`
+  * `user_fav_genre`
+  * `young_users`
+  * `scientist_users`
+
+After the tables have been created, exit Cassandra:
+
+```bash
+exit
+```
+
+---
+
+### 3. Import and Run Zeppelin Notebook
+
+Open Zeppelin:
+
+```text
+http://localhost:9995
+```
+
+1. Click **Import Note**
+2. Upload `P161828_Assignment2_MovieLens_Analysis.json`
+3. Open the imported notebook
+4. Run all cells sequentially from top to bottom
+5. Wait for each cell to complete before executing the next cell
+
+---
+
+### 4. Validate Results
+
+The notebook will:
+
+* Load data from HDFS into Spark
+* Create RDDs and DataFrames
+* Perform data preprocessing
+* Execute Spark SQL analytical queries
+* Write processed results into Cassandra
+* Read Cassandra tables back into Spark for validation
+
+Successful execution should produce outputs for all five analytical tasks and display validation results from Cassandra.
+
+```
+```
+
 
 
 # 🎯 Conclusion
