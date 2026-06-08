@@ -8,14 +8,16 @@ This project was developed for **STQD6324 Data Management Assignment 2**. The ob
 
 ## 🛠️ Software Environment
 
-| Component          | Purpose                      | 
-| ------------------ | ---------------------------- |
-| Apache Hadoop HDFS | Distributed storage          |
-| Apache Spark       | Distributed data processing  |
-| Spark SQL          | Analytical querying          |
-| Apache Cassandra   | NoSQL database storage       |
-| Python             | Data pipeline implementation |
-| Zeppelin Notebook  | Development environment      |
+| Component | Version | Purpose |
+|-----------|---------|---------|
+| Apache Spark | 2.3.0 | Distributed data processing |
+| Apache Cassandra | 3.11.x | NoSQL database storage |
+| PySpark | 2.3.0 | Python API for Spark |
+| HDFS | 2.6.5 | Distributed file storage |
+| Apache Zeppelin | 0.7.3 | Notebook environment |
+| Python | 2.7.x | Programming language |
+| Matplotlib | 2.2.5 | Data visualization |
+| HDP Sandbox | 2.6.5 | Hadoop platform |
 
 ---
 
