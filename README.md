@@ -64,7 +64,9 @@ Write Results to Cassandra
 Read Back for Validation
 ```
 ---
-📁 Repository Structure
+## 📁 Repository Structure
+
+```text
 STQD6324-Assignment2/
 │
 ├── README.md
@@ -79,11 +81,12 @@ STQD6324-Assignment2/
 │   ├── task_i_visual.png
 │   ├── task_ii_visual.png
 │   ├── task_iii_visual.png
-|   ├── task_iv_visual.png
+│   ├── task_iv_visual.png
 │   └── task_v_visual.png
 │
 └── setup.cql
-    
+```
+
 ---
 
 # 📊 Analytical Tasks
