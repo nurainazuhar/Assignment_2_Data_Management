@@ -355,10 +355,7 @@ The notebook will:
 
 Successful execution should produce outputs for all five analytical tasks and display validation results from Cassandra.
 
-```
-```
-
-
+---
 
 # 🎯 Conclusion
 
