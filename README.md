@@ -111,7 +111,16 @@ Identify the highest-rated movies based on average ratings.
 
 ### Top 10 Movies
 <p align="center">
-  <img src="screenshots/task_ii_output.png" width="700">
+  <a href="screenshots/task_ii_output.png">
+    <img src="screenshots/task_ii_output.png" width="500">
+  </a>
+</p>
+
+### Visualization
+<p align="center">
+  <a href="screenshots/task_ii_visual.png">
+    <img src="screenshots/task_ii_visual.png" width="500">
+  </a>
 </p>
 
 ### Interpretation
@@ -129,14 +138,23 @@ Identify users who rated at least 50 movies and determine their favourite genre.
 ### Results Summary
 
 * Active Users Identified: **568 users**
-* Favourite genres observed:
+* Some of favourite genres observed:
 
   * Drama
   * Comedy
-  * Horror
+  * Action
 
 <p align="center">
-  <img src="screenshots/task_iii_output.png" width="700">
+  <a href="screenshots/task_iii_output.png">
+    <img src="screenshots/task_iii_output.png" width="500">
+  </a>
+</p>
+
+### Visualization
+<p align="center">
+  <a href="screenshots/task_iii_visual.png">
+    <img src="screenshots/task_iii_visual.png" width="500">
+  </a>
 </p>
 
 ### Interpretation
@@ -155,7 +173,16 @@ Identify all users younger than 20 years old.
 
 * Total Users Below 20: **77 users**
 <p align="center">
-  <img src="screenshots/task_iv_output.png" width="600">
+  <a href="screenshots/task_iv_output.png">
+    <img src="screenshots/task_iv_output.png" width="500">
+  </a>
+</p>
+
+### Visualization
+<p align="center">
+  <a href="screenshots/task_iv_visual.png">
+    <img src="screenshots/task_iv_visual.png" width="500">
+  </a>
 </p>
 
 ### Observation
@@ -179,7 +206,16 @@ Identify users whose occupation is scientist and whose age falls between 30 and 
 * Total Scientists Aged 30–40: **16 users**
 
 <p align="center">
-  <img src="screenshots/task_v_output.png" width="600">
+  <a href="screenshots/task_v_output.png">
+    <img src="screenshots/task_v_output.png" width="500">
+  </a>
+</p>
+
+### Visualization
+<p align="center">
+  <a href="screenshots/task_v_visual.png">
+    <img src="screenshots/task_v_visual.png" width="500">
+  </a>
 </p>
 
 ### Interpretation
@@ -204,21 +240,9 @@ After insertion, all Cassandra tables were read back into Spark DataFrames to ve
 
 ---
 
-# 📸 Screenshots
-
-Screenshots of:
-
-* HDFS file uploads
-* Spark DataFrames
-* Spark SQL outputs
-* Cassandra validation queries
-* Visualizations
-
-are provided in the `screenshots/` directory.
-
----
 
 # 🎯 Conclusion
 
 This project successfully demonstrates the integration of Apache Spark and Cassandra for large-scale analytical processing. Using distributed computing techniques, the MovieLens dataset was transformed into meaningful insights regarding movie ratings, user preferences, demographic patterns, and genre interests. The workflow highlights how big data technologies can be combined to create scalable and efficient analytics pipelines.
+
 
