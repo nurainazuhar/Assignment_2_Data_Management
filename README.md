@@ -85,7 +85,9 @@ Calculate the average rating received by every movie in the dataset.
 
 ### Results
 <p align="center">
-  <img src="screenshots/task_i_output.png" width="700">
+  <a href="screenshots/task_i_output.png">
+    <img src="screenshots/task_i_output.png" width="500">
+  </a>
 </p>
 
 
