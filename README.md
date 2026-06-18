@@ -1,5 +1,11 @@
 # MovieLens-100k Analysis using Apache Spark + Cassandra 🎬
 
+![Python](https://img.shields.io/badge/Python-2.7-blue)
+![Apache Spark](https://img.shields.io/badge/Spark-2.3.0-orange)
+![Apache Cassandra](https://img.shields.io/badge/Cassandra-3.11-blue)
+![HDFS](https://img.shields.io/badge/HDFS-2.6.5-yellow)
+![Zeppelin](https://img.shields.io/badge/Zeppelin-0.7.3-red)
+![Status](https://img.shields.io/badge/Assignment-Completed-success)
 ---
 ## 📖 Project Overview
 
