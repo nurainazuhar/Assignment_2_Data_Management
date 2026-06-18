@@ -11,6 +11,16 @@
 
 This project was developed for **STQD6324 Data Management Assignment 2**. The objective is to build a distributed data pipeline using **Apache Spark** and **Cassandra** to analyze the MovieLens 100K dataset.
 
+## 📈 Project Summary
+
+| Metric | Value |
+|---------|---------|
+| Ratings Analysed | 100,000 |
+| Active Users (≥50 Ratings) | 568 |
+| Users Below 20 | 77 |
+| Scientists Aged 30–40 | 16 |
+| Top Rated Movie | Close Shave, A (1995) |
+| Storage Engine | Apache Cassandra |
 
 ## 🛠️ Software Environment
 
@@ -69,6 +79,16 @@ Write Results to Cassandra
        ▼
 Read Back for Validation
 ```
+## 📑 Quick Navigation
+
+- [Task (i): Average Rating for Each Movie](#-task-i-average-rating-for-each-movie)
+- [Task (ii): Top 10 Highest Rated Movies](#-task-ii-top-10-highest-rated-movies)
+- [Task (iii): Favourite Genre of Active Users](#-task-iii-favourite-genre-of-active-users)
+- [Task (iv): Users Below 20 Years Old](#-task-iv-users-below-20-years-old)
+- [Task (v): Scientists Aged Between 30 and 40](#-task-v-scientists-aged-between-30-and-40)
+- [Cassandra Data Storage](#-cassandra-data-storage)
+- [Reproducibility](#️-reproducibility)
+  
 ---
 ## 📁 Repository Structure
 
@@ -274,6 +294,9 @@ Identify users whose occupation is scientist and whose age falls between 30 and 
 The scientist user group represents a relatively small proportion of the dataset. Most identified users were male, although female scientists were also represented within the selected age range.
 
 ---
+## 🗃️ Cassandra Schema
+
+The processed analytical results were stored in the `movielens` keyspace using five Cassandra tables designed specifically for each analytical task.
 
 # 🗄️ Cassandra Data Storage
 
