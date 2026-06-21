@@ -11,6 +11,30 @@
 
 This project was developed for **STQD6324 Data Management Assignment 2**. The objective is to build a distributed data pipeline using **Apache Spark** and **Cassandra** to analyze the MovieLens 100K dataset.
 
+## 🚀 Quick Navigation
+
+<p align="center">
+  <a href="#-software-environment">Environment</a> •
+  <a href="#-dataset">Dataset</a> •
+  <a href="#-project-workflow">Workflow</a> •
+  <a href="#-repository-structure">Repository</a> •
+  <a href="#-analytical-tasks">Tasks</a> •
+  <a href="#️-cassandra-data-storage">Cassandra</a> •
+  <a href="#️-reproducibility">Reproducibility</a> •
+  <a href="#-conclusion">Conclusion</a>
+</p>
+
+<br>
+
+| Task | Analysis | Method | Output | Visualization | Discussion |
+|------|----------|--------|--------|---------------|------------|
+| 🎬 Task (i) | Average rating for each movie | [Method](#method-i) | [Result](#result-i) | [Visual](#visual-i) | [Interpretation](#interpretation-i) |
+| ⭐ Task (ii) | Top 10 highest rated movies | [Method](#method-ii) | [Result](#result-ii) | [Visual](#visual-ii) | [Interpretation](#interpretation-ii) |
+| 🎭 Task (iii) | Favourite genre of active users | [Method](#method-iii) | [Result](#result-iii) | [Visual](#visual-iii) | [Interpretation](#interpretation-iii) |
+| 👦 Task (iv) | Users below 20 years old | [Method](#method-iv) | [Result](#result-iv) | [Visual](#visual-iv) | [Interpretation](#interpretation-iv) |
+| 🔬 Task (v) | Scientists aged 30–40 | [Method](#method-v) | [Result](#result-v) | [Visual](#visual-v) | [Interpretation](#interpretation-v) |
+
+
 ## 📈 Project Summary
 
 | Metric | Value |
