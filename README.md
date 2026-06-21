@@ -6,22 +6,35 @@
 ![HDFS](https://img.shields.io/badge/HDFS-2.6.5-yellow)
 ![Zeppelin](https://img.shields.io/badge/Zeppelin-0.7.3-red)
 ![Status](https://img.shields.io/badge/Assignment-Completed-success)
+
+<p align="center">
+  <b>Distributed MovieLens Analytics Pipeline</b><br>
+  <sub>HDFS → Apache Spark → Spark SQL → Apache Cassandra → Validation</sub>
+</p>
+
 ---
+
+<a id="project-overview"></a>
+
 ## 📖 Project Overview
 
 This project was developed for **STQD6324 Data Management Assignment 2**. The objective is to build a distributed data pipeline using **Apache Spark** and **Cassandra** to analyze the MovieLens 100K dataset.
 
+---
+
+<a id="quick-navigation"></a>
+
 ## 🚀 Quick Navigation
 
 <p align="center">
-  <a href="#-software-environment">Environment</a> •
-  <a href="#-dataset">Dataset</a> •
-  <a href="#-project-workflow">Workflow</a> •
-  <a href="#-repository-structure">Repository</a> •
-  <a href="#-analytical-tasks">Tasks</a> •
-  <a href="#️-cassandra-data-storage">Cassandra</a> •
-  <a href="#️-reproducibility">Reproducibility</a> •
-  <a href="#-conclusion">Conclusion</a>
+  <a href="#software-environment">Environment</a> •
+  <a href="#dataset">Dataset</a> •
+  <a href="#project-workflow">Workflow</a> •
+  <a href="#repository-structure">Repository</a> •
+  <a href="#analytical-tasks">Tasks</a> •
+  <a href="#cassandra-data-storage">Cassandra</a> •
+  <a href="#reproducibility">Reproducibility</a> •
+  <a href="#conclusion">Conclusion</a>
 </p>
 
 <br>
@@ -34,6 +47,7 @@ This project was developed for **STQD6324 Data Management Assignment 2**. The ob
 | 👦 Task (iv) | Users below 20 years old | [Method](#method-iv) | [Result](#result-iv) | [Visual](#visual-iv) | [Interpretation](#interpretation-iv) |
 | 🔬 Task (v) | Scientists aged 30–40 | [Method](#method-v) | [Result](#result-v) | [Visual](#visual-v) | [Interpretation](#interpretation-v) |
 
+---
 
 ## 📈 Project Summary
 
@@ -46,6 +60,21 @@ This project was developed for **STQD6324 Data Management Assignment 2**. The ob
 | Top Rated Movie | Close Shave, A (1995) |
 | Storage Engine | Apache Cassandra |
 
+---
+
+## ✨ Project Highlights
+
+- Built a distributed data pipeline using **Apache Spark** and **Cassandra**.
+- Loaded MovieLens files from **HDFS** into Spark RDDs and DataFrames.
+- Used **Spark SQL** for analytical queries and validation.
+- Stored processed outputs into **Cassandra tables**.
+- Included result screenshots and visualizations for each analytical task.
+- Organized the project repository for reproducibility and GitHub presentation.
+
+---
+
+<a id="software-environment"></a>
+
 ## 🛠️ Software Environment
 
 | Component | Version | Purpose |
@@ -53,6 +82,7 @@ This project was developed for **STQD6324 Data Management Assignment 2**. The ob
 | Apache Spark | 2.3.0 | Distributed data processing |
 | Apache Cassandra | 3.11.x | NoSQL database storage |
 | PySpark | 2.3.0 | Python API for Spark |
+| Spark-Cassandra Connector | 2.3.0 | Spark and Cassandra integration |
 | HDFS | 2.6.5 | Distributed file storage |
 | Apache Zeppelin | 0.7.3 | Notebook environment |
 | Python | 2.7.x | Programming language |
@@ -60,6 +90,8 @@ This project was developed for **STQD6324 Data Management Assignment 2**. The ob
 | HDP Sandbox | 2.6.5 | Hadoop platform |
 
 ---
+
+<a id="dataset"></a>
 
 ## 📂 Dataset
 
@@ -76,6 +108,8 @@ Dataset Source:
 https://grouplens.org/datasets/movielens/
 
 ---
+
+<a id="project-workflow"></a>
 
 ## 🔄 Project Workflow
 
@@ -103,17 +137,11 @@ Write Results to Cassandra
        ▼
 Read Back for Validation
 ```
-## 📑 Quick Navigation
 
-- [Task (i): Average Rating for Each Movie](#-task-i-average-rating-for-each-movie)
-- [Task (ii): Top 10 Highest Rated Movies](#-task-ii-top-10-highest-rated-movies)
-- [Task (iii): Favourite Genre of Active Users](#-task-iii-favourite-genre-of-active-users)
-- [Task (iv): Users Below 20 Years Old](#-task-iv-users-below-20-years-old)
-- [Task (v): Scientists Aged Between 30 and 40](#-task-v-scientists-aged-between-30-and-40)
-- [Cassandra Data Storage](#-cassandra-data-storage)
-- [Reproducibility](#️-reproducibility)
-  
 ---
+
+<a id="repository-structure"></a>
+
 ## 📁 Repository Structure
 
 ```text
@@ -139,6 +167,8 @@ STQD6324-Assignment2/
 
 ---
 
+<a id="analytical-tasks"></a>
+
 # 📊 Analytical Tasks
 
 ---
@@ -149,6 +179,8 @@ STQD6324-Assignment2/
 
 Calculate the average rating received by every movie in the dataset.
 
+<a id="method-i"></a>
+
 ### Method
 
 * Join ratings data with movie titles.
@@ -158,23 +190,43 @@ Calculate the average rating received by every movie in the dataset.
   * Average rating
   * Number of ratings
 
+<a id="result-i"></a>
+
 ### Results
+
 <p align="center">
   <a href="screenshots/task_i_output.png">
     <img src="screenshots/task_i_output.png" width="500">
   </a>
 </p>
 
+<p align="center">
+  <em>Figure 1. Average rating output for each movie using Spark.</em>
+</p>
+
+<a id="visual-i"></a>
+
 ### Visualization
+
 <p align="center">
   <a href="screenshots/task_i_visual.png">
     <img src="screenshots/task_i_visual.png" width="500">
   </a>
 </p>
 
+<p align="center">
+  <em>Figure 2. Visualization of movies ranked by average rating.</em>
+</p>
+
+<a id="interpretation-i"></a>
+
 ### Interpretation
 
 Several movies achieved a perfect average rating of 5.0. However, these movies received very few ratings, making their averages less reliable indicators of overall popularity. Therefore, rating frequency should also be considered when evaluating movie quality.
+
+<p align="right">
+  <a href="#quick-navigation">⬆ Back to Navigation</a>
+</p>
 
 ---
 
@@ -184,28 +236,51 @@ Several movies achieved a perfect average rating of 5.0. However, these movies r
 
 Identify the highest-rated movies based on average ratings.
 
+<a id="method-ii"></a>
+
 ### Method
+
 - Calculated average ratings for all movies.
 - Filtered movies with sufficient rating counts (>10).
 - Ranked movies by average rating in descending order.
-  
+
+<a id="result-ii"></a>
+
 ### Top 10 Movies
+
 <p align="center">
   <a href="screenshots/task_ii_output.png">
     <img src="screenshots/task_ii_output.png" width="500">
   </a>
 </p>
 
+<p align="center">
+  <em>Figure 3. Top 10 highest rated movies after applying rating count filtering.</em>
+</p>
+
+<a id="visual-ii"></a>
+
 ### Visualization
+
 <p align="center">
   <a href="screenshots/task_ii_visual.png">
     <img src="screenshots/task_ii_visual.png" width="500">
   </a>
 </p>
 
+<p align="center">
+  <em>Figure 4. Bar chart visualization of the top 10 highest rated movies.</em>
+</p>
+
+<a id="interpretation-ii"></a>
+
 ### Interpretation
 
 The results reveal that several critically acclaimed films dominate the highest-rated list. Classic movies such as *Casablanca*, *12 Angry Men*, and *Rear Window* remain highly appreciated by users despite their age, which indicates enduring audience appeal.
+
+<p align="right">
+  <a href="#quick-navigation">⬆ Back to Navigation</a>
+</p>
 
 ---
 
@@ -215,12 +290,17 @@ The results reveal that several critically acclaimed films dominate the highest-
 
 Identify users who rated at least 50 movies and determine their favourite genre.
 
+<a id="method-iii"></a>
+
 ### Method
+
 - Selected users with at least 50 movie ratings.
 - Joined rating information with movie genre information.
 - Counted genre occurrences for each user.
 - Selected the most frequently rated genre as the user's favourite genre.
-  
+
+<a id="result-iii"></a>
+
 ### Results Summary
 
 * Active Users Identified: **568 users**
@@ -236,16 +316,33 @@ Identify users who rated at least 50 movies and determine their favourite genre.
   </a>
 </p>
 
+<p align="center">
+  <em>Figure 5. Favourite genre output for active users who rated at least 50 movies.</em>
+</p>
+
+<a id="visual-iii"></a>
+
 ### Visualization
+
 <p align="center">
   <a href="screenshots/task_iii_visual.png">
     <img src="screenshots/task_iii_visual.png" width="500">
   </a>
 </p>
 
+<p align="center">
+  <em>Figure 6. Favourite genre distribution among active users.</em>
+</p>
+
+<a id="interpretation-iii"></a>
+
 ### Interpretation
 
 **Drama** emerged as the most common favourite genre among active users. This suggests that users who engage heavily with the platform tend to consume a wide variety of dramatic content. **Comedy** also appeared frequently, indicating broad audience preference.
+
+<p align="right">
+  <a href="#quick-navigation">⬆ Back to Navigation</a>
+</p>
 
 ---
 
@@ -255,33 +352,56 @@ Identify users who rated at least 50 movies and determine their favourite genre.
 
 Identify all users younger than 20 years old.
 
+<a id="method-iv"></a>
+
 ### Method
+
 - Filtered the user dataset based on age.
 - Selected records where age < 20.
-  
+
+<a id="result-iv"></a>
+
 ### Results
 
 * Total Users Below 20: **77 users**
+
 <p align="center">
   <a href="screenshots/task_iv_output.png">
     <img src="screenshots/task_iv_output.png" width="500">
   </a>
 </p>
 
+<p align="center">
+  <em>Figure 7. Users below 20 years old identified from the user dataset.</em>
+</p>
+
+<a id="visual-iv"></a>
+
 ### Visualization
+
 <p align="center">
   <a href="screenshots/task_iv_visual.png">
     <img src="screenshots/task_iv_visual.png" width="500">
   </a>
 </p>
 
+<p align="center">
+  <em>Figure 8. Age distribution of users below 20 years old.</em>
+</p>
+
 ### Observation
 
 The majority of users below 20 years old were students, indicating that younger audiences form an important segment of the MovieLens user base.
 
+<a id="interpretation-iv"></a>
+
 ### Interpretation
 
 The prevalence of students among younger users is expected due to their higher engagement with entertainment media and online recommendation systems.
+
+<p align="right">
+  <a href="#quick-navigation">⬆ Back to Navigation</a>
+</p>
 
 ---
 
@@ -291,11 +411,16 @@ The prevalence of students among younger users is expected due to their higher e
 
 Identify users whose occupation is scientist and whose age falls between 30 and 40 years.
 
+<a id="method-v"></a>
+
 ### Method
+
 - Filtered users based on occupation.
 - Selected only users with occupation = scientist.
 - Applied an age filter between 30 and 40 years old.
-- 
+
+<a id="result-v"></a>
+
 ### Results
 
 * Total Scientists Aged 30–40: **16 users**
@@ -306,18 +431,38 @@ Identify users whose occupation is scientist and whose age falls between 30 and 
   </a>
 </p>
 
+<p align="center">
+  <em>Figure 9. Scientist users aged between 30 and 40 years old.</em>
+</p>
+
+<a id="visual-v"></a>
+
 ### Visualization
+
 <p align="center">
   <a href="screenshots/task_v_visual.png">
     <img src="screenshots/task_v_visual.png" width="500">
   </a>
 </p>
 
+<p align="center">
+  <em>Figure 10. Visualization of scientist users by age and gender.</em>
+</p>
+
+<a id="interpretation-v"></a>
+
 ### Interpretation
 
 The scientist user group represents a relatively small proportion of the dataset. Most identified users were male, although female scientists were also represented within the selected age range.
 
+<p align="right">
+  <a href="#quick-navigation">⬆ Back to Navigation</a>
+</p>
+
 ---
+
+<a id="cassandra-data-storage"></a>
+
 ## 🗃️ Cassandra Schema
 
 The processed analytical results were stored in the `movielens` keyspace using five Cassandra tables designed specifically for each analytical task.
@@ -337,6 +482,18 @@ The analytical outputs were stored in Cassandra for persistence and validation.
 After insertion, all Cassandra tables were read back into Spark DataFrames to verify successful storage.
 
 ---
+
+<a id="implementation-notes"></a>
+
+# 🧩 Implementation Notes
+
+This project was implemented in **Apache Zeppelin** using the `%spark2.pyspark` interpreter. Spark DataFrames were created from raw MovieLens files stored in HDFS. Analytical queries were executed using Spark DataFrame operations and Spark SQL temporary views.
+
+Cassandra was used as the persistent storage layer. Each analytical result was written into a separate Cassandra table and read back into Spark to validate successful storage.
+
+---
+
+<a id="reproducibility"></a>
 
 # ▶️ Reproducibility
 
@@ -410,8 +567,15 @@ Successful execution should produce outputs for all five analytical tasks and di
 
 ---
 
+<a id="conclusion"></a>
+
 # 🎯 Conclusion
 
 This project successfully demonstrates the integration of Apache Spark and Cassandra for large-scale analytical processing. Using distributed computing techniques, the MovieLens dataset was transformed into meaningful insights regarding movie ratings, user preferences, demographic patterns, and genre interests. The workflow highlights how big data technologies can be combined to create scalable and efficient analytics pipelines.
 
+---
 
+<p align="center">
+  <b>STQD6324 Data Management Assignment 2</b><br>
+  MovieLens 100K Analysis using Apache Spark, HDFS, Zeppelin, and Cassandra
+</p>
