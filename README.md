@@ -39,14 +39,6 @@ This project was developed for **STQD6324 Data Management Assignment 2**. The ob
 
 <br>
 
-| Task | Analysis | Method | Output | Visualization | Discussion |
-|------|----------|--------|--------|---------------|------------|
-| 🎬 Task (i) | Average rating for each movie | [Method](#method-i) | [Result](#result-i) | [Visual](#visual-i) | [Interpretation](#interpretation-i) |
-| ⭐ Task (ii) | Top 10 highest rated movies | [Method](#method-ii) | [Result](#result-ii) | [Visual](#visual-ii) | [Interpretation](#interpretation-ii) |
-| 🎭 Task (iii) | Favourite genre of active users | [Method](#method-iii) | [Result](#result-iii) | [Visual](#visual-iii) | [Interpretation](#interpretation-iii) |
-| 👦 Task (iv) | Users below 20 years old | [Method](#method-iv) | [Result](#result-iv) | [Visual](#visual-iv) | [Interpretation](#interpretation-iv) |
-| 🔬 Task (v) | Scientists aged 30–40 | [Method](#method-v) | [Result](#result-v) | [Visual](#visual-v) | [Interpretation](#interpretation-v) |
-
 ---
 
 ## 📈 Project Summary
